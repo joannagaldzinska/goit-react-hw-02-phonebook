@@ -1,3 +1,5 @@
+import PropTypes from 'prop-types';
+
 const FindContactByName = ({ filter, onChange }) => {
   return (
     <>
@@ -11,6 +13,11 @@ const FindContactByName = ({ filter, onChange }) => {
       />
     </>
   );
+};
+
+FindContactByName.propTypes = {
+  onChange: PropTypes.func,
+  filter: PropTypes.string,
 };
 
 export default FindContactByName;
